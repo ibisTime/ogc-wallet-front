@@ -3,6 +3,7 @@ define([
     'app/util/dialog',
     'app/interface/GeneralCtr'
 ], function ($, dialog, GeneralCtr) {
+    var defaultOpt = {};
     function _showMsg(msg, time) {
         var d = dialog({
             content: msg,
@@ -15,6 +16,7 @@ define([
     }
     function initSms(opt){
         this.options = $.extend({}, this.defaultOptions, opt);
+        defaultOpt = this.options;
         var _self = this;
         $("#" + this.options.id).off("click")
             .on("click", function(e) {
@@ -25,7 +27,7 @@ define([
     }
     initSms.prototype.defaultOptions = {
         id: "getVerification",
-        mobile: "mobile",
+        mobile: 'mobile',
         interCode: "interCode",
         checkInfo: function () {
     		return $("#" + this.mobile).valid();
@@ -35,9 +37,8 @@ define([
     initSms.prototype.handleSendVerifiy = function() {
         var verification = $("#" + this.options.id);
         verification.prop("disabled", true);
-        GeneralCtr.sendCaptcha({
-        	sendCode: this.options.sendCode,
-        	bizType: this.options.bizType, 
+        GeneralCtr.sendCaptcha(this.options.sendCode, {
+        	bizType: this.options.bizType,
         	mobile: $("#" + this.options.mobile).val()
         }).then(() => {
                 var i = 60;

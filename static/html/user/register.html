@@ -12,9 +12,8 @@
 
 <div class="register-wrap">
     <div class="logo">
-        <img src="/static/images/theia-logo@3x.png"/>
+        <img src="/static/images/logo.png"/>
     </div>
-    <div class="slogan"></div>
     <div class="register-from">
         <div class="chan-box">
             <div class="chan-left set-chan">
@@ -27,81 +26,56 @@
         <form id="formWrapper" class="form-wrapper wp100">
             <div class="form-item form-mobile">
                 <div class="am-flexbox">
-                    <div class="over-hide" id="country-wrap">
-                        <div class="national-flag fl" id="nationalFlag"></div>
-                        <div class="national-select fl">
-                            <p id="interCode"></p>
-                            <i class="icon"></i>
-                        </div>
-                    </div>
-                    <input type="text" pattern="[0-9]*" placeholder="" id="mobile" name="mobile" class="input-item"/>
+                    <input type="text" pattern="[0-9]*" placeholder="" id="mobile" name="mobile"/>
                 </div>
             </div>
-            <div class="form-item form-btn-item mt20">
+            <div class="form-item form-btn-item mt10">
                 <div class="am-flexbox">
-                    <div class="input-item smsCaptcha-item"><input type="text" placeholder="" id="smsCaptcha"
-                                                                   name="smsCaptcha" pattern="[0-9]*"/></div>
+                    <div class="input-item smsCaptcha-item">
+                        <input type="text" placeholder="" id="smsCaptcha" name="smsCaptcha" pattern="[0-9]*"/>
+                    </div>
                     <button class="item-button smsCaptcha-btn am-button am-button-small"
                             id="getVerification"></button>
+                </div>
+            </div>
+            <div class="form-item form-paw mt10">
+                <div class="am-flexbox">
+                    <input type="password" placeholder="" id="zhpas" name="zhpas"/>
+                </div>
+            </div>
+            <div class="form-item form-qrpaw mt10">
+                <div class="am-flexbox">
+                    <input type="password" placeholder="" id="qr_zhpas" name="qr_zhpas"/>
                 </div>
             </div>
         </form>
         <form id="formWrapperEmail" class="form-wrapper wp100 hidden">
             <div class="form-item form-mobile">
                 <div class="am-flexbox from-email">
-                    <div class="over-hide" id="country-email" style="height: 0.48rem; padding-top: 0.05rem;">
-                        <div class="national-email fl">
-
-                        </div>
-                    </div>
-                    <input type="text" placeholder="" id="email" name="email" class="input-item"/>
+                    <input type="text" placeholder="" id="email" name="email"/>
                 </div>
             </div>
-            <div class="form-item form-btn-item mt20">
+            <div class="form-item form-btn-item mt10">
                 <div class="am-flexbox">
-                    <div class="input-item smsCaptcha-item from-email"><input type="text" placeholder="" id="smsCaptchaEmail"
-                                                                   name="smsCaptchaEmail" pattern="[0-9]*"/></div>
+                    <div class="input-item smsCaptcha-item from-email">
+                        <input type="text" placeholder="" id="smsCaptchaEmail" name="smsCaptchaEmail" pattern="[0-9]*"/>
+                    </div>
                     <button class="item-button smsCaptcha-btn am-button am-button-small"
                             id="getEmailVerification"></button>
                 </div>
             </div>
-        </form>
-        <form id="formWrapper1" class="form-wrapper form-wrapper2 wp100 hidden" style="margin-top: 0.3rem;">
-            <div class="form-item form-mobile">
+            <div class="form-item form-paw mt10">
                 <div class="am-flexbox">
-                    <input type="password" placeholder="" id="zhpas" name="zhpas" class="input-item"/>
+                    <input type="password" placeholder="" id="yx-zhpas" name="zhpas"/>
                 </div>
             </div>
-            <div class="form-item form-mobile">
-                <div class="am-flexbox flexbox01">
-                    <input type="password" placeholder="" id="qr_zhpas" name="qr_zhpas" class="input-item"/>
-                </div>
-            </div>
-            <div class="form-item paw-box">
-                <p><i class="jb1"></i> <span class="paw-ws p-xx"></span></p>
-                <p><i class="jb3"></i> <span class="paw-xx p-xx"></span></p>
-                <p><i class="jb2"></i> <span class="paw-dx p-xx"></span> <span class="fr aqjb"></span></p>
-            </div>
-        </form>
-        <form id="formWrapper2" class="form-wrapper form-wrapper3 wp100 hidden">
-            <div class="form-item form-mobile">
+            <div class="form-item form-qrpaw mt10">
                 <div class="am-flexbox">
-                    <input type="password" pattern="[0-9]*" placeholder="" id="zjpas" name="zjpas" class="input-item"/>
-                </div>
-            </div>
-            <div class="form-item form-mobile">
-                <div class="am-flexbox flexbox01">
-                    <input type="password" pattern="[0-9]*" placeholder="" id="qr_zjpas" name="qr_zjpas" class="input-item"/>
+                    <input type="password" placeholder="" id="yx-qr_zhpas" name="qr_zhpas"/>
                 </div>
             </div>
         </form>
-        <!--<div class="smsCaptcha-box opc-hidden">-->
-            <!--<p>验证码已通过短信的形式发送到<span class="sms-mob">13516726254</span>手机上</p>-->
-        <!--</div>-->
-        <div class="next-to">
-            <span>下一步</span><i></i>
-        </div>
-        <div class="btnWrap hidden">
+        <div class="btnWrap">
             <button id="subBtn" class="am-button wp100"></button>
         </div>
     </div>

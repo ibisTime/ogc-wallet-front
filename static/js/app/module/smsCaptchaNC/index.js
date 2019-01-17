@@ -55,7 +55,6 @@ define([
                     verification.text(i-- + "s");
                 }else {
                     verification.text(Base.getText('获取验证码', lang)).prop("disabled", false);
-                    clearInterval(timer);
                 }
             }, 1000);
         }, () => {
@@ -133,7 +132,7 @@ define([
 		init: function(option) {
 	        this.options = $.extend({}, this.defaultOptions, option);
 	        defaultOpt = this.options;
-	        getSysConfigType();
+	        // getSysConfigType();
 	        var temp = $(tmpl);
 	        $("body").append(tmpl);
 
@@ -163,7 +162,7 @@ define([
 		},
 		hasCont: function() {
 	    	if (!$("#ncCaptchaPopup").length)
-	    		return false
+	    		return false;
 	    	return true;
     	},
 		hideCont: function(option) {

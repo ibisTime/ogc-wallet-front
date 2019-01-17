@@ -20,11 +20,11 @@ define([
     	},
       // 短信注册
       mobileRegister(config) {
-        return Ajax.get("805045", config, true, true);
+        return Ajax.get("805041", config, true, true);
       },
       // 邮箱注册
       emailRegister(config) {
-        return Ajax.get("805046", config, true, true);
+        return Ajax.get("805043", config, true, true);
       },
     	// 登录
     	login(config) {

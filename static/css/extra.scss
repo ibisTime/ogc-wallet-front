@@ -670,9 +670,6 @@ label.error{
                     color: #fbaa73;
                 }
             }
-            .smsCaptcha-item input{
-                width: 2.4rem;
-            }
             .smsCaptcha-btn{
                 height: .5rem;
                 line-height: .5rem;
@@ -726,9 +723,6 @@ label.error{
             color: #cf262b;
             font-size: .28rem;
         }
-    }
-    .from-email{
-        padding-left: 0.4rem;
     }
 }
 .countryPopup{
@@ -1016,7 +1010,7 @@ label.error{
 
     .logo{
         text-align: center;
-        margin-top: 1.2rem;
+        margin-top: 0.8rem;
         img{
             height: 2rem;
             vertical-align: bottom;
@@ -1042,7 +1036,7 @@ label.error{
         padding: .66rem .4rem .4rem;
         position: fixed;
         left: .4rem;
-        bottom: .8rem;
+        bottom: 0.8rem;
         .chan-box{
             width: 100%;
             display: flex;
@@ -1060,7 +1054,7 @@ label.error{
             }
         }
         .form-wrapper{
-            margin-top: 0.5rem;
+            margin-top: 0.2rem;
 
             .form-item{
                 padding: .26rem 0;
@@ -1154,10 +1148,7 @@ label.error{
         .btnWrap{
             margin-top: .52rem;
             .am-button{
-                background-image: -webkit-linear-gradient(-180deg, #F6BB20 0%, #F19001 99%);
-                background-image: -moz-linear-gradient(-180deg, #F6BB20 0%, #F19001 99%);
-                background-image: -o-linear-gradient(-180deg, #F6BB20 0%, #F19001 99%);
-                background-image: linear-gradient(-180deg, #F6BB20 0%, #F19001 99%);
+                background-color: #4064E6;
                 box-shadow: inset 0 .02rem .12rem 0 rgba(255,255,255,0.50);
                 border-radius: .08rem;
                 height: 1rem;
@@ -1435,10 +1426,10 @@ label.error{
         color: #fbaa73 !important;
     }
     input:-ms-input-placeholder{
-        color: #fbaa73;
+        color: #999999;
     }
     input::-webkit-input-placeholder{
-        color: #fbaa73;
+        color: #999999;
     }
     #mobile-find-error, #smsCaptcha-error, #mobile-error, #password-error, #email-error, #email-find-error, #smsCaptchaEmail-error{
         color: #fff;

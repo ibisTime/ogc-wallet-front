@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+<meta itemprop="name" content="Theia钱包"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/share.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+
+
+		<title></title>
+		<script data-loader src="/static/js/app/config.js"></script>
+<script data-loader src="/static/js/app/language.js"></script>
+<script data-loader src="/static/js/app/errorCode.js"></script>
+<script data-loader src="/static/js/require_2125d3e.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_c675daa.js"></script>
+<script>/*resourcemap*/
+require.config({paths:{
+  "js/app/util/dialog": "/static/js/app/util/dialog_b3620af",
+  "js/app/util/cookie": "/static/js/app/util/cookie_35dc997",
+  "js/app/module/loading/index": "/static/js/app/module/loading/index_5c78d9b",
+  "js/app/util/ajax": "/static/js/app/util/ajax_977246b",
+  "js/app/controller/base": "/static/js/app/controller/base_953ad3a",
+  "js/app/interface/UserCtr": "/static/js/app/interface/UserCtr_b29af08",
+  "js/lib/validate/jquery.validate": "/static/js/lib/validate/jquery.validate_f619dd0",
+  "js/app/module/validate/index": "/static/js/app/module/validate/index_6fc4364",
+  "js/app/interface/GeneralCtr": "/static/js/app/interface/GeneralCtr_8739ab7",
+  "js/app/module/smsCaptchaNC/index": "/static/js/app/module/smsCaptchaNC/index_df5932d",
+  "js/app/controller/user/Login": "/static/js/app/controller/user/Login_9a8481d"
+}});
+
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth < 750)
+                    docEl.style.fontSize = clientWidth / 7.5 + 'px';
+                else
+                    docEl.style.fontSize = '100px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false)
+    })(document, window);
+
+
+				require(['js/app/controller/user/Login']);
+			</script>
+	
+    <link rel="stylesheet" href="/static/css/index.css" />
+</head>
+
+		<body class="bg_fff">
+			<div class="login-wrap">
+				<div class="title"></div>
+				<form id="formWrapper" class="form-wrapper">
+			        <div class="form-item border-bottom-1px mt20">
+		                <div class="am-flexbox">
+		                    <select class="select-item" id="interCode" name="interCode"/>
+				            </select>
+		                </div>
+			        </div>
+		            <div class="form-item">
+		                <div class="am-flexbox">
+		                	<span class="item-title" id="interNum"></span>
+		                    <input type="text" pattern="[0-9]*" placeholder="" id="mobile" name="mobile" class="input-item"/>
+		                </div>
+		            </div>
+		            <div class="form-item form-btn-item border-bottom-1px mt20">
+		                <div class="am-flexbox">
+		                    <div class="input-item smsCaptcha-item"><input type="text" placeholder="" id="smsCaptcha" name="smsCaptcha"/></div>
+		                    <button class="item-button smsCaptcha-btn am-button am-button-small am-button-ghost" id="getVerification"></button>
+		                </div>
+		            </div>
+		        </form>
+
+		        <div class="login-btn wp100">
+		            <button id="loginBtn" class="am-button am-button-primary wp100"></button>
+		        </div>
+			</div>		</body>
+
+</html>

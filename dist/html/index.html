@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+<meta itemprop="name" content="Theia钱包"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/share.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+
+
+    <title></title>
+    <script data-loader src="/static/js/app/config.js"></script>
+<script data-loader src="/static/js/app/language.js"></script>
+<script data-loader src="/static/js/app/errorCode.js"></script>
+<script data-loader src="/static/js/require_2125d3e.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_c675daa.js"></script>
+<script>/*resourcemap*/
+require.config({paths:{
+  "js/app/util/dialog": "/static/js/app/util/dialog_b3620af",
+  "js/app/util/cookie": "/static/js/app/util/cookie_35dc997",
+  "js/app/module/loading/index": "/static/js/app/module/loading/index_5c78d9b",
+  "js/app/util/ajax": "/static/js/app/util/ajax_977246b",
+  "js/app/controller/base": "/static/js/app/controller/base_953ad3a",
+  "js/app/controller/Index": "/static/js/app/controller/Index_c2166f5"
+}});
+
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth < 750)
+                    docEl.style.fontSize = clientWidth / 7.5 + 'px';
+                else
+                    docEl.style.fontSize = '100px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false)
+    })(document, window);
+
+
+        require(['js/app/controller/Index']);
+    </script>
+
+    <link rel="stylesheet" href="/static/css/index.css" />
+</head>
+
+<body>
+    <body class="bg_fff"></body>
+
+</html>
