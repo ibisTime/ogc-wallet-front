@@ -580,13 +580,11 @@ label.error{
 .register-from{
     .form-wrapper{
         margin-top: .4rem;
-
         .form-item{
             border-radius: .08rem;
             padding: .26rem .3rem .26rem 0;
             background-color: transparent;
             overflow: initial;
-
             &.form-btn-item{
                 padding: 0.2rem 0.3rem;
             }
@@ -723,6 +721,9 @@ label.error{
             color: #cf262b;
             font-size: .28rem;
         }
+    }
+    input{
+        width: 80%;
     }
 }
 .countryPopup{
@@ -997,8 +998,9 @@ label.error{
     }
 }
 .register-bg{
+    position: relative;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     overflow: hidden;
     background-image: url('../images/register-bg@3x.png');
     background-position: bottom;
@@ -1035,6 +1037,7 @@ label.error{
         border-radius: .24rem;
         padding: .66rem .4rem .4rem;
         position: fixed;
+        z-index: 999;
         left: .4rem;
         bottom: 0.8rem;
         .chan-box{

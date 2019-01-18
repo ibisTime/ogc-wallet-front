@@ -130,8 +130,7 @@ body {
   font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
   color: #484848;
   background-color: #f5f5f5;
-  line-height: 150%;
-  min-height: 100%;
+  height: 100%;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -2006,6 +2005,11 @@ label.error {
   font-size: .28rem;
 }
 
+.popup-content input,
+.register-from input {
+  width: 80%;
+}
+
 .countryPopup {
   background-color: #fff;
   z-index: 9999;
@@ -2311,8 +2315,9 @@ label.error {
 }
 
 .register-bg {
+  position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
   background-image: url("../images/register-bg@3x.png");
   background-position: bottom;
@@ -2360,6 +2365,7 @@ label.error {
           border-radius: .24rem;
   padding: .66rem .4rem .4rem;
   position: fixed;
+  z-index: 999;
   left: .4rem;
   bottom: 0.8rem;
 }

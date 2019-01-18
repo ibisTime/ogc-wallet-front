@@ -130,8 +130,7 @@ body {
   font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
   color: #484848;
   background-color: #f5f5f5;
-  line-height: 150%;
-  min-height: 100%;
+  height: 100%;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -431,7 +430,7 @@ textarea {
 }
 
 .global-loading-icon {
-  background: url("/static/images/loading1.png") no-repeat;
+  background: url("../images/loading1.png") no-repeat;
   -webkit-animation: loadingCircle 1.2s infinite linear;
      -moz-animation: loadingCircle 1.2s infinite linear;
           animation: loadingCircle 1.2s infinite linear;

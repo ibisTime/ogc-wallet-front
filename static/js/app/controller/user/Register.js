@@ -180,15 +180,15 @@ define([
                 base.showLoading();
                 let params = {
                   email: $('#email').val().trim(),
-                  smsCaptcha: $('#smsCaptchaEmail').val().trim(),
+                  captcha: $('#smsCaptchaEmail').val().trim(),
                   userReferee: inviteCode,
                   loginPwd: $('#yx-zhpas').val().trim()
                 };
                 UserCtr.emailRegister(params).then(data => {
                   base.showMsg(base.getText('注册成功', lang));
                   setTimeout(() => {
-                    window.location.onload();
-                  }, 1500);
+                    window.location.reload();
+                  }, 2500);
                 }, base.hideLoading);
               }
             }
@@ -209,8 +209,8 @@ define([
                 UserCtr.mobileRegister(params).then(data => {
                   base.showMsg(base.getText('注册成功', lang));
                   setTimeout(() => {
-                    window.location.onload();
-                  }, 1500);
+                    window.location.reload();
+                  }, 2500);
                 }, base.hideLoading);
               }
             }
