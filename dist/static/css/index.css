@@ -430,7 +430,7 @@ textarea {
 }
 
 .global-loading-icon {
-  background: url("../images/loading1.png") no-repeat;
+  background: url("/static/images/loading1.png") no-repeat;
   -webkit-animation: loadingCircle 1.2s infinite linear;
      -moz-animation: loadingCircle 1.2s infinite linear;
           animation: loadingCircle 1.2s infinite linear;
@@ -1324,7 +1324,7 @@ label.error {
 .rpReceive-bg {
   width: 100%;
   height: 100%;
-  background-image: url("../images/rpReceive-bg.png");
+  background-image: url("/static/images/rpReceive-bg.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -1333,7 +1333,7 @@ label.error {
 .rpReceive-wrap {
   width: 5.8rem;
   height: 8rem;
-  background-image: url("../images/红包背景短@3x.png");
+  background-image: url("/static/images/红包背景短@3x.png");
   background-position: center;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -1423,7 +1423,7 @@ label.error {
           border-radius: 50%;
   overflow: hidden;
   padding: .1rem;
-  background-image: url("../images/redPacket-btnbg.png");
+  background-image: url("/static/images/redPacket-btnbg.png");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   position: relative;
@@ -1511,7 +1511,7 @@ label.error {
 
 .rpReceiveDetail-wrap .detail-wrap {
   width: 100%;
-  background-image: url("../images/rectangle@3x.png");
+  background-image: url("/static/images/rectangle@3x.png");
   background-repeat: no-repeat;
   background-position: 0 -1rem;
   -webkit-background-size: 100% 100%;
@@ -1669,7 +1669,7 @@ label.error {
   height: .2rem;
   margin-top: .03rem;
   display: inline-block;
-  background-image: url("../images/icon-best.png");
+  background-image: url("/static/images/icon-best.png");
   background-position: center;
   -webkit-background-size: 100% 100%;
           background-size: 100%;
@@ -1715,7 +1715,7 @@ label.error {
   z-index: 9;
   width: .8rem;
   height: .8rem;
-  background-image: url("../images/close@2x.png");
+  background-image: url("/static/images/close@2x.png");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: .28rem .28rem;
@@ -1745,7 +1745,7 @@ label.error {
 }
 
 .rpReceivePopup .popup-body {
-  background-image: url("../images/红包弹窗背景@2x.png");
+  background-image: url("/static/images/红包弹窗背景@2x.png");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   width: 6rem;
@@ -1840,7 +1840,7 @@ label.error {
 
 .popup-content .form-wrapper .form-item:after,
 .register-from .form-wrapper .form-item:after {
-  background-image: url("../images/bhr.png");
+  background-image: url("/static/images/bhr.png");
 }
 
 .popup-content .form-wrapper .form-item .am-flexbox,
@@ -2029,7 +2029,7 @@ label.error {
 .countryPopup .popup-header .icon-return {
   width: .8rem;
   height: .8rem;
-  background-image: url("../images/左.png");
+  background-image: url("/static/images/左.png");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: .32rem .32rem;
@@ -2083,7 +2083,7 @@ label.error {
 }
 
 .countryPopup .country-list.on .icon {
-  background-image: url("../images/打勾.png");
+  background-image: url("/static/images/打勾.png");
 }
 
 /*下载按钮页*/
@@ -2165,12 +2165,12 @@ label.error {
 }
 
 .uploadWrap1 .upload-appStore {
-  background-image: url("../images/uploadBtn-en1.png");
+  background-image: url("/static/images/uploadBtn-en1.png");
   margin-right: 0.4rem;
 }
 
 .uploadWrap1 .upload-google {
-  background-image: url("../images/uploadBtn-en2.png");
+  background-image: url("/static/images/uploadBtn-en2.png");
 }
 
 .upload-btn {
@@ -2306,7 +2306,7 @@ label.error {
   display: inline-block;
   width: .18rem;
   height: .5rem;
-  background-image: url("../images/下拉@3x.png");
+  background-image: url("/static/images/下拉@3x.png");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
@@ -2319,7 +2319,7 @@ label.error {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url("../images/register-bg@3x.png");
+  background-image: url("/static/images/register-bg@3x.png");
   background-position: bottom;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -2412,7 +2412,7 @@ label.error {
   font-size: .28rem;
   width: 2rem;
   margin-right: .02rem;
-  background-image: url("../images/smsback.png");
+  background-image: url("/static/images/smsback.png");
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
@@ -2469,7 +2469,7 @@ label.error {
   padding: 0.33rem 0.42rem;
   font-size: 0.24rem;
   color: #0064ff;
-  background-image: url("../images/smsbox.png");
+  background-image: url("/static/images/smsbox.png");
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
@@ -2492,7 +2492,7 @@ label.error {
   width: 0.24rem;
   margin-left: 0.1rem;
   margin-bottom: 0.1rem;
-  background-image: url("../images/rright.png");
+  background-image: url("/static/images/rright.png");
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
@@ -2592,7 +2592,7 @@ label.error {
 .luckDraw-bg {
   width: 100%;
   height: 100%;
-  background-image: url("../images/抽奖背景@3x.png");
+  background-image: url("/static/images/抽奖背景@3x.png");
   background-position: center;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -2641,7 +2641,7 @@ label.error {
 .luckDraw-wrap .wrapper {
   width: 6.92rem;
   margin: .3rem auto 0;
-  background-image: url("../images/九宫格@3x.png");
+  background-image: url("/static/images/九宫格@3x.png");
   background-position: center;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -2659,7 +2659,7 @@ label.error {
   width: 1.75rem;
   height: 2.2rem;
   margin: .05rem;
-  background-image: url("../images/prizeBg@3x.png");
+  background-image: url("/static/images/prizeBg@3x.png");
   background-position: center;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -2747,7 +2747,7 @@ label.error {
 }
 
 .luckDrawPopup .popup-mask {
-  background-image: url("../images/浮动@3x.png");
+  background-image: url("/static/images/浮动@3x.png");
   background-position: top;
   -webkit-background-size: 100% auto;
           background-size: 100% auto;
@@ -2756,7 +2756,7 @@ label.error {
 .luckDrawPopup .popup-body {
   width: 5.1rem;
   height: 7.2rem;
-  background-image: url("../images/恭喜@3x.png");
+  background-image: url("/static/images/恭喜@3x.png");
   background-position: center;
   -webkit-background-size: contain;
           background-size: contain;
@@ -2799,7 +2799,7 @@ label.error {
   color: #DC5500;
   font-size: .32rem;
   text-align: center;
-  background-image: url("../images/按钮@3x.png");
+  background-image: url("/static/images/按钮@3x.png");
   background-position: center;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -2921,11 +2921,11 @@ label.error {
 }
 
 .bg_fff .gl-content .gl-foo .gl-dz i {
-  background-image: url("../images/dz.png");
+  background-image: url("/static/images/dz.png");
 }
 
 .bg_fff .gl-content .gl-foo .gl-dz .dzh {
-  background-image: url("../images/dzhui.png");
+  background-image: url("/static/images/dzhui.png");
 }
 
 .bg_fff .gl-content .gl-foo .gl-dzc {
@@ -2940,5 +2940,5 @@ label.error {
 
 .bg_fff .gl-content .gl-foo .gl-lr i {
   width: 0.36rem;
-  background-image: url("../images/yjing.png");
+  background-image: url("/static/images/yjing.png");
 }

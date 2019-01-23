@@ -168,75 +168,94 @@ define([
         $('#email').focus();
       });
 
-        // 登录
-    	$(".register-from #subBtn").click(function(){
-    	  if(clickType === 'email') {
-            if(_formWrapperEmail.valid()) {
-              if($('#yx-zhpas').val() !== $('#yx-qr_zhpas').val()) {
-                base.showMsg(base.getText('密码不一致，请重新输入', lang));
-                $('#yx-zjpas').val('');
-                $('#yx-qr_zjpas').val('');
-              }else { // 邮箱注册
-                base.showLoading();
-                let params = {
-                  email: $('#email').val().trim(),
-                  captcha: $('#smsCaptchaEmail').val().trim(),
-                  userReferee: inviteCode,
-                  loginPwd: $('#yx-zhpas').val().trim()
-                };
-                UserCtr.emailRegister(params).then(data => {
-                  base.showMsg(base.getText('注册成功', lang));
-                  setTimeout(() => {
-                    window.location.reload();
-                  }, 2500);
-                }, base.hideLoading);
-              }
-            }
-          }else {
-            if(_formWrapper.valid()) {
-              if($('#zhpas').val() !== $('#qr_zhpas').val()) {
-                base.showMsg(base.getText('密码不一致，请重新输入', lang));
-                $('#zjpas').val('');
-                $('#qr_zjpas').val('');
-              }else { // 短信注册
-                base.showLoading();
-                let params = {
-                  mobile: $('#mobile').val().trim(),
-                  smsCaptcha: $('#smsCaptcha').val().trim(),
-                  userReferee: inviteCode,
-                  loginPwd: $('#zhpas').val().trim()
-                };
-                UserCtr.mobileRegister(params).then(data => {
-                  base.showMsg(base.getText('注册成功', lang));
-                  setTimeout(() => {
-                    window.location.reload();
-                  }, 2500);
-                }, base.hideLoading);
-              }
+      // 登录
+      $(".register-from #subBtn").click(function(){
+        if(clickType === 'email') {
+          if(_formWrapperEmail.valid()) {
+            if($('#yx-zhpas').val() !== $('#yx-qr_zhpas').val()) {
+              base.showMsg(base.getText('密码不一致，请重新输入', lang));
+              $('#yx-zjpas').val('');
+              $('#yx-qr_zjpas').val('');
+            }else { // 邮箱注册
+              base.showLoading();
+              let params = {
+                email: $('#email').val().trim(),
+                captcha: $('#smsCaptchaEmail').val().trim(),
+                userReferee: inviteCode,
+                loginPwd: $('#yx-zhpas').val().trim()
+              };
+              UserCtr.emailRegister(params).then(data => {
+                base.showMsg(base.getText('注册成功', lang));
+                setTimeout(() => {
+                  registerSuccess();
+                }, 1800);
+              }, base.hideLoading);
             }
           }
-    	});
+        }else {
+          if(_formWrapper.valid()) {
+            if($('#zhpas').val() !== $('#qr_zhpas').val()) {
+              base.showMsg(base.getText('密码不一致，请重新输入', lang));
+              $('#zjpas').val('');
+              $('#qr_zjpas').val('');
+            }else { // 短信注册
+              base.showLoading();
+              let params = {
+                mobile: $('#mobile').val().trim(),
+                smsCaptcha: $('#smsCaptcha').val().trim(),
+                userReferee: inviteCode,
+                loginPwd: $('#zhpas').val().trim()
+              };
+              UserCtr.mobileRegister(params).then(data => {
+                base.showMsg(base.getText('注册成功', lang));
+                setTimeout(() => {
+                  registerSuccess();
+                }, 1800);
+              }, base.hideLoading);
+            }
+          }
+        }
+      });
 
-    	$("#rpReceivePopup .close").click(function() {
-    		$("#rpReceivePopup").addClass("hidden");
-    	});
+      function registerSuccess() {
+        var uhref = sessionStorage.getItem('uhref') || '';
+        let msg = base.getText("注册成功，请前往下载APP！",lang);
+        base.confirm(msg, base.getText("取消",lang), base.getText("前往下载",lang)).then(function(){
+          if(lang == 'ZH_CN'){
+            window.location.href = DOWNLOADLINK+'.html';
+          } else {
+            window.location.href = DOWNLOADLINK+'-'+ lang +'.html';
+          }
+        },function(){
+          if(uhref) {
+            base.showLoading();
+            window.location.href = uhref;
+          }else {
+            window.location.reload();
+          }
+        });
+      }
 
-    	$("#countryPopup .close").click(function() {
-    		$("#countryPopup").addClass("hidden");
-    	});
+      $("#rpReceivePopup .close").click(function() {
+          $("#rpReceivePopup").addClass("hidden");
+      });
 
-    	$("#country-wrap").click(() => {
-    		$("#countryPopup").removeClass("hidden");
-    	});
+      $("#countryPopup .close").click(function() {
+          $("#countryPopup").addClass("hidden");
+      });
 
-    	$("#countryList").on("click", ".country-list", function(){
-    		lang = $(this).attr("data-lang");
-    		setHtml();
-    		$(this).addClass("on").siblings('.country-list').removeClass('on');
-    		$("#nationalFlag").css({"background-image": `url('${base.getImg($(this).attr("data-pic"))}')`});
-    		$("#interCode").text("+"+$(this).attr("data-value").substring(2)).attr("value", $(this).attr("data-value")).attr("code", $(this).attr("data-code"));
-    		$("#countryPopup").addClass("hidden");
-    	});
+      $("#country-wrap").click(() => {
+          $("#countryPopup").removeClass("hidden");
+      });
+
+      $("#countryList").on("click", ".country-list", function(){
+          lang = $(this).attr("data-lang");
+          setHtml();
+          $(this).addClass("on").siblings('.country-list').removeClass('on');
+          $("#nationalFlag").css({"background-image": `url('${base.getImg($(this).attr("data-pic"))}')`});
+          $("#interCode").text("+"+$(this).attr("data-value").substring(2)).attr("value", $(this).attr("data-value")).attr("code", $(this).attr("data-code"));
+          $("#countryPopup").addClass("hidden");
+      });
 
     }
 });

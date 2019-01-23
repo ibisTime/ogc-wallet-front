@@ -430,7 +430,7 @@ textarea {
 }
 
 .global-loading-icon {
-  background: url("../images/loading1.png") no-repeat;
+  background: url("/static/images/loading1.png") no-repeat;
   -webkit-animation: loadingCircle 1.2s infinite linear;
      -moz-animation: loadingCircle 1.2s infinite linear;
           animation: loadingCircle 1.2s infinite linear;

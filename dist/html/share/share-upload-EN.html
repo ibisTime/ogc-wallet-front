@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+<meta itemprop="name" content="橙wallet"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/share.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+
+
+    <title></title>
+    <script data-loader src="/static/js/app/config.js"></script>
+<script data-loader src="/static/js/app/language.js"></script>
+<script data-loader src="/static/js/app/errorCode.js"></script>
+<script data-loader src="/static/js/require_2125d3e.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_c675daa.js"></script>
+<script data-loader>/*resourcemap*/
+require.config({paths:{
+  "js/app/util/dialog": "/static/js/app/util/dialog_b3620af",
+  "js/app/util/cookie": "/static/js/app/util/cookie_35dc997",
+  "js/app/module/loading/index": "/static/js/app/module/loading/index_5c78d9b",
+  "js/app/util/ajax": "/static/js/app/util/ajax_977246b",
+  "js/app/controller/base": "/static/js/app/controller/base_953ad3a",
+  "js/app/interface/GeneralCtr": "/static/js/app/interface/GeneralCtr_14ea569",
+  "js/app/interface/UserCtr": "/static/js/app/interface/UserCtr_b29af08",
+  "js/app/controller/public/Download": "/static/js/app/controller/public/Download_36b33fc"
+}});
+
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth < 750)
+                    docEl.style.fontSize = clientWidth / 7.5 + 'px';
+                else
+                    docEl.style.fontSize = '100px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false)
+    })(document, window);
+
+
+        require(['js/app/controller/public/Download']);
+    </script>
+
+    <link rel="stylesheet" href="/static/css/index.css" />
+</head>
+
+<body class="uploadBg" data-lang="EN">
+	<div class="top-lang" id="language-wrap">
+		<samp class="fl" id="language"></samp>
+		<i class="icon fl"></i>
+	</div>
+	<div class="upload-logo">
+		<div class="wp100 logo">
+			<img src="/static/images/logo-shadow.png" />
+		</div>
+		<div class="wp100 txt">
+			<img src="/static/images/logo-txt-shadow.png" />
+		</div>
+	</div>
+	<div class="upload-text">
+		<p class="txt1"></p>
+	</div>
+	<div class="uploadWrap uploadWrap1">
+		<div class="upload-appStore" id="upload_appStore"></div>
+		<div class="upload-google" id="upload_google"></div>
+	</div>
+	<div class="upload-remark"></div>
+	
+	<!-- 安装教程 -->
+	<div class="installTutorial-wrap hidden">
+		<div class="title">
+			<div class="line"></div>
+			<div class="txt"></div>
+		</div>
+		<div class="section-wrap">
+			<div class="section">
+				<div class="txt first"></div>
+				<div class="img-wrap img-wrap1"></div>
+			</div>
+			
+			<div class="section">
+				<div class="txt second"></div>
+				<div class="img-wrap img-wrap2"></div>
+			</div>
+			
+			<div class="section">
+				<div class="txt third"></div>
+				<div class="img-wrap img-wrap3"></div>
+			</div>
+		</div>
+	</div>
+	<div class="upload-mask hidden">
+		<img src="/static/images/rightArrow.png" />
+		<p></p>
+	</div>
+	<div class="popup countryPopup hidden" id="languagePopup">
+		<div class="popup-header">
+			<div class="icon-return close"></div>
+		</div>
+		<div class="popup-content" id="countryList">
+		</div>
+	</div></body>
+</html>

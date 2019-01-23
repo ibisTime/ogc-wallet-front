@@ -30,7 +30,7 @@ define([
     	},
         // 查询数据字典 parentKey
         getDictList(parentKey) {
-            return Ajax.get("660906", {parentKey}, true, true);
+            return Ajax.get("630045", {parentKey}, true, true);
     	}
     };
 })
