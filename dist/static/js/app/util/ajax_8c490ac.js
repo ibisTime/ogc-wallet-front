@@ -1,9 +1,4 @@
-define([
-    "jquery",
-    'app/util/cookie',
-    'app/util/dialog',
-    'app/module/loading'
-], function($, CookieUtil, dialog, loading) {
+define('js/app/util/ajax', ["js/lib/jquery-2.1.4", 'js/app/util/cookie', 'js/app/util/dialog', 'js/app/module/loading/index'], function($, CookieUtil, dialog, loading) {
     var cache = {};
 
     function getUrl(code) {

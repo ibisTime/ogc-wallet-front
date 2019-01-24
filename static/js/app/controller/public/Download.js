@@ -4,7 +4,6 @@ define([
     'app/interface/GeneralCtr',
     'app/interface/UserCtr',
 ], function(base, Ajax, GeneralCtr, UserCtr) {
-
 	var iosUpdateUrl,androidUpdateUrl;
 	var lang = $("body").attr("data-lang") || 'ZH_CN';
 	var channel = base.getUrlParam('channel') || 'theia';

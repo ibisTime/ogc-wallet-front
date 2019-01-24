@@ -5,6 +5,7 @@ define([
     'app/interface/GeneralCtr'
 ], function ($, base, dialog, GeneralCtr) {
     var defaultOpt = {};
+  var lang = base.getUrlParam('lang') || 'ZH_CN';
     function _showMsg(msg, time) {
         var d = dialog({
             content: msg,
@@ -49,14 +50,14 @@ define([
                 if(i > 0){
                     verification.text(i-- + "s");
                 }else {
-                    verification.text("获取验证码").prop("disabled", false);
+                    verification.text(base.getText("获取验证码", lang)).prop("disabled", false);
                     clearInterval(this.timer);
                 }
             }, 1000);
         }, () => {
           base.hideLoading();
             this.options.errorFn && this.options.errorFn();
-            verification.text("获取验证码").prop("disabled", false);
+            verification.text(base.getText("获取验证码", lang)).prop("disabled", false);
         });
     };
     return {

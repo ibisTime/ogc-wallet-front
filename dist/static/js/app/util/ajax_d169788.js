@@ -1,24 +1,11 @@
-define([
-    "jquery",
-    'app/util/cookie',
-    'app/util/dialog',
-    'app/module/loading'
-], function($, CookieUtil, dialog, loading) {
+define('js/app/util/ajax', ["js/lib/jquery-2.1.4", 'js/app/util/cookie', 'js/app/util/dialog', 'js/app/module/loading/index', 'js/app/controller/base'], function($, CookieUtil, dialog, loading, base) {
+  console.log(base);
+    var lang = base.getUrlParam('lang') || 'ZH_CN';
     var cache = {};
 
     function getUrl(code) {
         return "/api";
     }
-
-    function getUrlParam(name) {
-      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-      var r = window.location.search.substr(1).match(reg);
-      if (r != null)
-        return decodeURIComponent(r[2]);
-      return '';
-    }
-
-    var lang = getUrlParam('lang') || 'ZH_CN';
 
     function clearSessionUser() {
         sessionStorage.removeItem("userId"); //userId

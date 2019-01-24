@@ -194,10 +194,10 @@ var LANGUAGE = {
 		'EN': 'Failed to get the download url!',
 		'KO': '다운로드 실패!',
 	},
-	'Theia跨链生态钱包':{
-		'ZH_CN': 'Theia跨链生态钱包',
-		'EN': 'THEIA CROSS-CHAIN PROFIT SHARING WALLET',
-		'KO': 'Theia크로스체인 생태지갑',
+	'橙wallet跨链生态钱包':{
+		'ZH_CN': '橙walle跨链生态钱包',
+		'EN': 'WALLET CROSS-CHAIN PROFIT SHARING WALLET',
+		'KO': 'Wallet크로스체인 생태지갑',
 	},
 	'一站式数字应用管理平台':{
 		'ZH_CN': '一站式数字应用管理平台',
