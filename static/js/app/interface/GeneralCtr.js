@@ -26,7 +26,7 @@ define([
         },
         // 查询系统参数 key
         getSysConfigKey(ckey) {
-            return Ajax.get("660917", {ckey}, true, true);
+            return Ajax.get("630047", {ckey}, true, true);
     	},
         // 查询数据字典 parentKey
         getDictList(parentKey) {

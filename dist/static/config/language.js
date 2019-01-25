@@ -111,8 +111,8 @@ var LANGUAGE = {
 		'EN': 'Download',
 		'KO': '다운로드',
 	},
-	'下载Theia钱包，即可提取': {
-		'ZH_CN': '下载Theia钱包，即可提取',
+	'下载橙wallet，即可提取': {
+		'ZH_CN': '下载橙wallet，即可提取',
 		'EN': 'Withdraw from Theia wallet',
 		'KO': 'Theia월렛 다운로드',
 	},
@@ -155,8 +155,8 @@ var LANGUAGE = {
 	 * 新增下载页
 	 * */
 	//下载页
-	'下载Theia钱包':{
-		'ZH_CN': '下载Theia钱包',
+	'下载橙wallet':{
+		'ZH_CN': '下载橙wallet',
 		'EN': 'Download THEIA Wallet',
 		'KO': 'Theia지갑 다운로드',
 	},
@@ -195,10 +195,10 @@ var LANGUAGE = {
 		'EN': 'Failed to get the download url!',
 		'KO': '다운로드 실패!',
 	},
-	'Theia跨链生态钱包':{
-		'ZH_CN': 'Theia跨链生态钱包',
-		'EN': 'THEIA CROSS-CHAIN PROFIT SHARING WALLET',
-		'KO': 'Theia크로스체인 생태지갑',
+	'橙wallet跨链生态钱包':{
+		'ZH_CN': '橙walle跨链生态钱包',
+		'EN': 'WALLET CROSS-CHAIN PROFIT SHARING WALLET',
+		'KO': 'Wallet크로스체인 생태지갑',
 	},
 	'一站式数字应用管理平台':{
 		'ZH_CN': '一站式数字应用管理平台',
@@ -226,8 +226,8 @@ var LANGUAGE = {
 		'EN': 'Register now',
 		'KO': '회원가입',
 	},
-	'Theia钱包 (全球首款能分红的跨链钱包)':{
-		'ZH_CN': 'Theia钱包 (全球首款能分红的跨链钱包)',
+	'橙wallet (全球首款能分红的跨链钱包)':{
+		'ZH_CN': '橙wallet (全球首款能分红的跨链钱包)',
 		'EN': "Theia Wallet (the World's first profit sharing cross-chain wallet)",
 		'KO': 'Theia지갑(세계 최초 공유크로스체인월렛)',
 	},
@@ -276,8 +276,8 @@ var LANGUAGE = {
 		'EN': 'Installation instructions',
 		'KO': '',
 	},
-	'1.第一次打开Theia钱包的时候会弹出如下框。': {
-		'ZH_CN': '1.第一次打开Theia钱包的时候会弹出如下框。',
+	'1.第一次打开橙wallet的时候会弹出如下框。': {
+		'ZH_CN': '1.第一次打开橙wallet的时候会弹出如下框。',
 		'EN': '1. After installing Theia for Enterprise, you will see the following pop-up on the first time you access Theia.',
 		'KO': '',
 	},
@@ -287,7 +287,7 @@ var LANGUAGE = {
 		'KO': '',
 	},
 	'3.点击信任这个证书就可以...': {
-		'ZH_CN': '3.点击<i>信任</i>这个证书就可以开始使用Theia钱包了 ;*部分手机的「<i>信任</i>」是「<i>验证</i>」',
+		'ZH_CN': '3.点击<i>信任</i>这个证书就可以开始使用橙wallet了 ;*部分手机的「<i>信任</i>」是「<i>验证</i>」',
 		'EN': '3. Click to trust the enterprise certificate to start using Cobo; On some phones <i>Trust</i> is <i>Verify</i>',
 		'KO': '',
 	},

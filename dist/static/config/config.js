@@ -24,17 +24,13 @@ var LANGUAGELIST=[
 	},{
 		'key':'EN',
 		'value': 'English'
-	},{
-		'key':'KO',
-		'value': '한국어'
 	}
 ];
 
 // 下载页安装教程图片语言配置
 var INSTALLIMG={
 	'ZH_CN': 'ZH_CN',
-	'EN': 'EN',
-	'KO': 'EN',
+	'EN': 'EN'
 }
 
 
