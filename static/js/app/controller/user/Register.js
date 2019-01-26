@@ -185,6 +185,7 @@ define([
                 loginPwd: $('#yx-zhpas').val().trim()
               };
               UserCtr.emailRegister(params).then(data => {
+                base.hideLoading();
                 base.showMsg(base.getText('注册成功', lang));
                 setTimeout(() => {
                   registerSuccess();
