@@ -208,6 +208,7 @@ define([
                 loginPwd: $('#zhpas').val().trim()
               };
               UserCtr.mobileRegister(params).then(data => {
+                base.hideLoading();
                 base.showMsg(base.getText('注册成功', lang));
                 setTimeout(() => {
                   registerSuccess();
