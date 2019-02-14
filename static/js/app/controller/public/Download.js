@@ -41,6 +41,9 @@ define([
 			getIosUrl()
 		).then(function(){
 			base.hideLoading();
+			if(base.getUserBrowser() !== "ios") {
+              $('.installTutorial-wrap').addClass('hidden');
+			}
             $("#uploadBtn").off('click').click(function(){
 				if(base.getUserBrowser()=="ios"){
 					if(iosUpdateUrl!=""&&iosUpdateUrl){
@@ -56,7 +59,7 @@ define([
 				}else{
 					if(androidUpdateUrl!=""&&androidUpdateUrl){
 						if(base.is_weixn()){
-							$(".upload-mask").removeClass("hidden")
+							$(".upload-mask").removeClass("hidden");
 						}else{
 							window.location.href = androidUpdateUrl;
 						}
