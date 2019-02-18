@@ -1,1 +1,0 @@
-"use strict";define("js/app/interface/RedPacketCtr",["js/app/controller/base","js/app/util/ajax"],function(e,t){return{getRedPacketDetail:function(e){return t.get("623006",e)},receiveRedPacket:function(r){return t.get("623001",{redPacketCode:r,userId:e.getUserId()})}}});
