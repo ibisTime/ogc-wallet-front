@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+<meta itemprop="name" content="MooreBit"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/share.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+
+
+		<title></title>
+		<script data-loader src="/static/config/config.js"></script>
+<script data-loader src="/static/config/language.js"></script>
+<script data-loader src="/static/config/errorCode.js"></script>
+<script data-loader src="/static/pkg/common_68b3250.js"></script>
+<script type="text/javascript" src="/static/pkg/html/user/login.html_aio_19c096c.js"></script>
+<script>
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth < 750)
+                    docEl.style.fontSize = clientWidth / 7.5 + 'px';
+                else
+                    docEl.style.fontSize = '100px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false)
+    })(document, window);
+
+
+				require(['js/app/controller/user/Login']);
+			</script>
+	
+    <link rel="stylesheet" href="/static/css/index.css" />
+</head>
+
+		<body class="bg_fff">
+			<div class="login-wrap">
+				<div class="title"></div>
+				<form id="formWrapper" class="form-wrapper">
+			        <div class="form-item border-bottom-1px mt20">
+		                <div class="am-flexbox">
+		                    <select class="select-item" id="interCode" name="interCode"/>
+				            </select>
+		                </div>
+			        </div>
+		            <div class="form-item">
+		                <div class="am-flexbox">
+		                	<span class="item-title" id="interNum"></span>
+		                    <input type="text" pattern="[0-9]*" placeholder="" id="mobile" name="mobile" class="input-item"/>
+		                </div>
+		            </div>
+		            <div class="form-item form-btn-item border-bottom-1px mt20">
+		                <div class="am-flexbox">
+		                    <div class="input-item smsCaptcha-item"><input type="text" placeholder="" id="smsCaptcha" name="smsCaptcha"/></div>
+		                    <button class="item-button smsCaptcha-btn am-button am-button-small am-button-ghost" id="getVerification"></button>
+		                </div>
+		            </div>
+		        </form>
+
+		        <div class="login-btn wp100">
+		            <button id="loginBtn" class="am-button am-button-primary wp100"></button>
+		        </div>
+			</div>		</body>
+
+</html>

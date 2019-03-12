@@ -23,7 +23,7 @@ define([
     function setHtml(){
 		base.showLoading();
     	$("title").html(base.getText('下载MooreBit',lang));
-    	$(".upload-text .txt1").html(base.getText('全球首款跨链生态钱包',lang));
+    	$(".upload-text .txt1").html(base.getText('专业的数字资产管家',lang));
     	$(".uploadBtn").html(base.getText('立即下载',lang));
     	$(".upload-remark").html(base.getText('若无法安装或任何原因需卸载原版本...',lang))
 		$(".installTutorial-wrap .title .txt").html(base.getText('安装教程',lang))

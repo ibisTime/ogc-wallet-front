@@ -1,0 +1,1 @@
+"use strict";define("js/app/controller/Index",["js/app/controller/base"],function(){function n(){e()}function e(){}n()});

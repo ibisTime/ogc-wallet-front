@@ -92,7 +92,15 @@ define([
                 smsCaptcha: {
                     required: true,
                     "sms": true
-                }
+                },
+              zhpas: {
+                required: true,
+                'lgError': true
+              },
+              qr_zhpas: {
+                required: true,
+                'lgError': true
+              }
             },
             onkeyup: false
         });
@@ -105,6 +113,14 @@ define([
           smsCaptchaEmail: {
             required: true,
             "sms": true
+          },
+          zhpas: {
+            required: true,
+            'lgError': true
+          },
+          qr_zhpas: {
+            required: true,
+            lgError: true
           }
         },
         onkeyup: false
@@ -223,7 +239,7 @@ define([
         var uhref = sessionStorage.getItem('uhref') || '';
         let msg = base.getText("注册成功，请前往下载APP！",lang);
         base.confirm(msg, base.getText("取消",lang), base.getText("前往下载",lang)).then(function(){
-          window.location.href = 'https://fir.im/hace'; return;
+          // window.location.href = 'https://fir.im/hace'; return;
           if(lang == 'ZH_CN'){
             window.location.href = DOWNLOADLINK+'.html';
           } else {
