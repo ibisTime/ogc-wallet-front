@@ -1,1 +1,0 @@
-"use strict";define("js/app/interface/BizCtr",["js/app/controller/base","js/app/util/ajax"],function(e,t){return{luckDraw:function(e){return t.get("625440",{userId:e},!0)},getListPrizeWinner:function(){return t.get("625441",{},!0)}}});

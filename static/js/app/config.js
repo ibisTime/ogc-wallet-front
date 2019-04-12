@@ -1,4 +1,4 @@
-var SYSTEM_CODE = "CD-OGC000019";
+var SYSTEM_CODE = "CD-OGC000021";
 var CLIENT = "WEB_H5";// h5登录标识
 //七牛地址
 var PIC_PREFIX = 'http://qn.tha.hichengdai.com/';

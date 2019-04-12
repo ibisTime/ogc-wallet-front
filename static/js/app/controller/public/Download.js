@@ -22,12 +22,12 @@ define([
     // 设置页面html
     function setHtml(){
 		base.showLoading();
-    	$("title").html(base.getText('下载MooreBit',lang));
+    	$("title").html(base.getText('下载金米',lang));
     	$(".upload-text .txt1").html(base.getText('专业的数字资产管家',lang));
     	$(".uploadBtn").html(base.getText('立即下载',lang));
     	$(".upload-remark").html(base.getText('若无法安装或任何原因需卸载原版本...',lang))
 		$(".installTutorial-wrap .title .txt").html(base.getText('安装教程',lang))
-		$(".section .first").html(base.getText('1.第一次打开MooreBit的时候会弹出如下框。',lang))
+		$(".section .first").html(base.getText('1.第一次打开金米的时候会弹出如下框。',lang))
 		$(".section .img-wrap1").html(`<img src="/static/images/installFirst_${INSTALLIMG[lang]}.png"/>`);
 		$(".section .second").html(base.getText('2.首次安装的用户,请前往...',lang))
 		$(".section .img-wrap2").html(`<img src="/static/images/installSecond_${INSTALLIMG[lang]}.png"/>`);

@@ -110,10 +110,10 @@ var LANGUAGE = {
 		'EN': 'Download',
 		'KO': '다운로드',
 	},
-	'下载MooreBit，即可提取': {
-		'ZH_CN': '下载MooreBit，即可提取',
-		'EN': 'Withdraw from MooreBit wallet',
-		'KO': 'MooreBit월렛 다운로드',
+	'下载金米，即可提取': {
+		'ZH_CN': '下载金米，即可提取',
+		'EN': 'Withdraw from 金米 wallet',
+		'KO': '金米월렛 다운로드',
 	},
 	'价值': {
 		'ZH_CN': '价值',
@@ -154,10 +154,10 @@ var LANGUAGE = {
 	 * 新增下载页
 	 * */
 	//下载页
-	'下载MooreBit':{
-		'ZH_CN': '下载MooreBit',
-		'EN': 'Download MooreBit Wallet',
-		'KO': 'MooreBit지갑 다운로드',
+	'下载金米':{
+		'ZH_CN': '下载金米',
+		'EN': 'Download 金米 Wallet',
+		'KO': '金米지갑 다운로드',
 	},
 	'安卓下载':{
 		'ZH_CN': '安卓下载',
@@ -194,8 +194,8 @@ var LANGUAGE = {
 		'EN': 'Failed to get the download url!',
 		'KO': '다운로드 실패!',
 	},
-	'MooreBit跨链生态钱包':{
-		'ZH_CN': 'MooreBit跨链生态钱包',
+	'金米跨链生态钱包':{
+		'ZH_CN': '金米跨链生态钱包',
 		'EN': 'WALLET CROSS-CHAIN PROFIT SHARING WALLET',
 		'KO': 'Wallet크로스체인 생태지갑',
 	},
@@ -225,10 +225,10 @@ var LANGUAGE = {
 		'EN': 'Register now',
 		'KO': '회원가입',
 	},
-	'MooreBit (全球首款能分红的跨链钱包)':{
-		'ZH_CN': 'MooreBit (全球首款能分红的跨链钱包)',
-		'EN': "MooreBit Wallet (the World's first profit sharing cross-chain wallet)",
-		'KO': 'MooreBit지갑(세계 최초 공유크로스체인월렛)',
+	'金米 (全球首款能分红的跨链钱包)':{
+		'ZH_CN': '金米 (全球首款能分红的跨链钱包)',
+		'EN': "金米 Wallet (the World's first profit sharing cross-chain wallet)",
+		'KO': '金米지갑(세계 최초 공유크로스체인월렛)',
 	},
 	'前往下载':{
 		'ZH_CN': '前往下载',
@@ -245,9 +245,9 @@ var LANGUAGE = {
 		'EN': 'Register successfully, please go download the App! ',
 		'KO': '가입성공. App을 다운로드하시오',
 	},
-	'您已经是MooreBit用户，请前往下载APP！':{
-		'ZH_CN': '您已经是MooreBit用户，请前往下载APP！',
-		'EN': 'You are alredy registered with MooreBit, please go download the App! ',
+	'您已经是金米用户，请前往下载APP！':{
+		'ZH_CN': '您已经是金米用户，请前往下载APP！',
+		'EN': 'You are alredy registered with 金米, please go download the App! ',
 		'KO': '이미 가입되어있습니다. App을 다운로드하시오',
 	},
 	/**
@@ -275,18 +275,18 @@ var LANGUAGE = {
 		'EN': 'Installation instructions',
 		'KO': '',
 	},
-	'1.第一次打开MooreBit的时候会弹出如下框。': {
-		'ZH_CN': '1.第一次打开MooreBit的时候会弹出如下框。',
-		'EN': '1. After installing MooreBit for Enterprise, you will see the following pop-up on the first time you access MooreBit.',
+	'1.第一次打开金米的时候会弹出如下框。': {
+		'ZH_CN': '1.第一次打开金米的时候会弹出如下框。',
+		'EN': '1. After installing 金米 for Enterprise, you will see the following pop-up on the first time you access 金米.',
 		'KO': '',
 	},
 	'2.首次安装的用户,请前往...': {
 		'ZH_CN': '2.首次安装的用户,请前往「<i>设置-通用-设备管理</i>」;*部分手机「<i>设备管理</i>」是「<i>描述文件与设备管理</i>」',
-		'EN': '2. Head over to <i>Settings</i> -> <i>General</i> -> <i>Device Management</i> to find the certification for MooreBit; On some phones <i>Device Management</i> is <i>Profiles and Device Management</i>',
+		'EN': '2. Head over to <i>Settings</i> -> <i>General</i> -> <i>Device Management</i> to find the certification for 金米; On some phones <i>Device Management</i> is <i>Profiles and Device Management</i>',
 		'KO': '',
 	},
 	'3.点击信任这个证书就可以...': {
-		'ZH_CN': '3.点击<i>信任</i>这个证书就可以开始使用MooreBit了 ;*部分手机的「<i>信任</i>」是「<i>验证</i>」',
+		'ZH_CN': '3.点击<i>信任</i>这个证书就可以开始使用金米了 ;*部分手机的「<i>信任</i>」是「<i>验证</i>」',
 		'EN': '3. Click to trust the enterprise certificate to start using Cobo; On some phones <i>Trust</i> is <i>Verify</i>',
 		'KO': '',
 	},
